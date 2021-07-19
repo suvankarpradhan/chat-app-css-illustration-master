@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+.body {
+  background-color: hsl(0, 0%, 100%);
+}
+.main-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.main-frame::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -4.25vw;
+  width: 33.5vw;
+  height: 49.5vw;
+  background: linear-gradient(0deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-radius: 0vw 0vw 25vw 25vw;
+  z-index: -1;
+}
+.main-frame::after {
+  content: "";
+  position: absolute;
+  width: 22vw;
+  height: 48.5vw;
+  bottom: 0%;
+  right: 0%;
+  background-color: hsl(270, 20%, 96%);
+  z-index: -1;
+  border-top-left-radius: 18vw;
+}
+.main-frame > .left-portion {
+  padding: 10.5vw 7.5vw 10.5vw 25.5vw;
+}
+.mobile {
+  width: 17vw;
+  height: 36vw;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.8vw;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 3.5%;
+}
+.mobile-screen {
+  background-color: hsl(270, 20%, 96%);
+  border-radius: 1.6vw;
+  overflow: hidden;
+  position: relative;
+}
+.mobile-screen::before {
+  content: "";
+  height: 2.2vw;
+  width: 9.5vw;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 1;
+  position: absolute;
+  border-radius: 1vw;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -2.9%;
+}
+.status-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12.5% 3.5% 3.5%;
+  background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-radius: 0.5vw;
+}
+.status-bar .fas {
+  color: hsl(0, 0%, 100%);
+}
+.status-bar .left-portion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 80%;
+}
+.status-bar .left-portion > img {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+  margin: 0% 3%;
+}
+.status-bar .left-portion > .profile-name {
+  font-weight: 500;
+  font-size: 0.8vw;
+  color: hsl(0, 0%, 100%);
+}
+.status-bar .left-portion > .profile-name span {
+  font-weight: 400;
+  font-size: 0.6vw;
+  color: hsl(276, 100%, 81%);
+}
+.status-bar .right-portion {
+  display: flex;
+  flex: 20%;
+  justify-content: flex-end;
+}
+.chat-area {
+  display: flex;
+  flex-direction: column;
+}
+.meassages {
+  width: 63%;
+  margin-top: 3%;
+  padding: 4% 5%;
+  font-weight: 400;
+  font-size: 0.6vw;
+}
+.left-box {
+  align-self: flex-start;
+  margin-left: 4%;
+  background-color: hsl(277, 33%, 92%);
+  color: hsl(276, 55%, 52%);
+  border-radius: 1vw 1vw 1vw 0.35vw;
+}
+.right-box {
+  align-self: flex-end;
+  margin-right: 4%;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(271, 15%, 43%);
+  border-radius: 1.2vw 1.2vw 0.5vw 1.2vw;
+}
+.right-box.img {
+  display: flex;
+  width: 60%;
+  padding: 0%;
+  background-color: transparent;
+  justify-content: space-between;
+}
+.right-box.img img {
+  width: 2.85vw;
+  height: 2.85vw;
+  border-radius: 0.8vw;
+}
+.left-box.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  color: hsl(270, 20%, 96%);
+}
+.left-box.price span {
+  font-size: 1.15vw;
+  font-weight: 700;
+}
+.input-section {
+  margin: 5.5% 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 4%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.5vw;
+}
+.input-section input[type="text"] {
+  width: 70%;
+  height: 2vw;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  font-size: 0.7vw;
+  padding-left: 2%;
+}
+.input-section input[type="text"]::placeholder {
+  color: hsl(206, 6%, 79%);
+}
+.input-section .fas {
+  font-size: 2vw;
+  color: hsl(271, 36%, 24%);
+}
+.main-frame > .right-portion {
+  padding-left: 1%;
+  padding-right: 17.5%;
+}
+.main-frame > .right-portion > h1 {
+  font-weight: 500;
+  font-size: 2.8vw;
+  margin-bottom: 6%;
+  color: hsl(271, 36%, 24%);
+}
+.main-frame > .right-portion > p {
+  font-weight: 400;
+  font-size: 1.1vw;
+  color: hsl(270, 7%, 64%);
+}
+.attribution {
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
