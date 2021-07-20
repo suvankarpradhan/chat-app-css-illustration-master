@@ -8,6 +8,7 @@
 .body {
   background-color: hsl(0, 0%, 100%);
 }
+/****************main view****************/
 .main-frame {
   display: flex;
   flex-direction: row;
@@ -39,6 +40,7 @@
 .main-frame > .left-portion {
   padding: 10.5vw 7.5vw 10.5vw 25.5vw;
 }
+/*****************************mobile design*****************/
 .mobile {
   width: 17vw;
   height: 36vw;
@@ -65,6 +67,7 @@
   transform: translateX(-50%);
   top: -2.9%;
 }
+/**********status-bar*****************/
 .status-bar {
   display: flex;
   flex-direction: row;
@@ -105,6 +108,7 @@
   flex: 20%;
   justify-content: flex-end;
 }
+/**************chat section**********/
 .chat-area {
   display: flex;
   flex-direction: column;
@@ -128,7 +132,7 @@
   margin-right: 4%;
   background-color: hsl(0, 0%, 100%);
   color: hsl(271, 15%, 43%);
-  border-radius: 1.2vw 1.2vw 0.5vw 1.2vw;
+  border-radius: 1vw 1vw 0.35vw 1vw;
 }
 .right-box.img {
   display: flex;
@@ -195,6 +199,7 @@
   font-size: 1.1vw;
   color: hsl(270, 7%, 64%);
 }
+/***********footer***********/
 .attribution {
   position: fixed;
   bottom: 0%;
@@ -205,4 +210,98 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+/****************mobile view**********/
+@media screen and (max-width: 480px) {
+  .main-frame {
+    flex-direction: column;
+  }
+  .main-frame::before {
+    width: 84.5vw;
+    height: 122vw;
+    left: -35%;
+    border-radius: 0vw 0vw 125vw 50vw;
+  }
+  .main-frame::after {
+    width: 50vw;
+    height: 125vw;
+    border-top-left-radius: 100vw;
+  }
+  .main-frame > .left-portion {
+    padding: 11vw 17vw 15vw;
+  }
+  .mobile {
+    width: 65vw;
+    height: 129vw;
+    padding: 4%;
+    border-radius: 7vw;
+  }
+  .mobile-screen::before {
+    height: 6.5vw;
+    width: 32vw;
+    border-radius: 7vw;
+  }
+  .mobile-screen {
+    border-radius: 6vw;
+  }
+  .status-bar {
+    padding: 10.5% 4.5% 4.5%;
+  }
+  .status-bar .fas {
+    font-size: 3vw;
+  }
+  .status-bar .left-portion > img {
+    width: 8vw;
+    height: 8vw;
+    margin: 0% 4%;
+  }
+  .status-bar .left-portion > .profile-name {
+    font-size: 3.2vw;
+  }
+  .status-bar .left-portion > .profile-name span {
+    font-size: 2.4vw;
+  }
+  .meassages {
+    margin-top: 4%;
+    padding: 3% 4%;
+    width: 65%;
+    font-size: 2.4vw;
+  }
+  .left-box {
+    border-radius: 3vw 3vw 3vw 1.15vw;
+  }
+  .right-box {
+    border-radius: 3vw 3vw 1.15vw 3vw;
+  }
+  .right-box.img img {
+    width: 9.85vw;
+    height: 9.85vw;
+    border-radius: 2.8vw;
+  }
+  .left-box.price span {
+    font-size: 3.15vw;
+  }
+  .input-section {
+    border-radius: 9.5vw;
+    margin: 6.5% 4%;
+  }
+  .input-section input[type="text"] {
+    height: 6vw;
+    font-size: 2.4vw;
+  }
+  .input-section .fas {
+    font-size: 5vw;
+  }
+  .main-frame > .right-portion {
+    padding: 11vw 7vw 15vw;
+    text-align: center;
+  }
+  .main-frame > .right-portion > h1 {
+    font-size: 9.4vw;
+  }
+  .main-frame > .right-portion > p {
+    font-size: 4.3vw;
+    margin: 0% 3%;
+    line-height: 6vw;
+  }
 }
